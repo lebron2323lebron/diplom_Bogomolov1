@@ -1,0 +1,55 @@
+{% load static %}
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel=»stylesheet» href=»style.css»>
+    <link rel="shortcut icon" href="{% static 'img/logo.jpg' %}" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="{% static 'assets/bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/DataTables/datatables.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/select2/dist/css/select2.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js" integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="{% static 'assets/default/js/jquery-3.6.0.min.js' %}"></script>
+    <script src="{% static 'assets/bootstrap/js/popper.min.js' %}"></script>
+    <script src="{% static 'assets/DataTables/datatables.min.js' %}"></script>
+    <script src="{% static 'assets/select2/dist/js/select2.min.js' %}"></script>
+    <script src="{% static 'assets/bootstrap/js/bootstrap.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'assets/default/js/script.js' %}"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="header-line">
+            <div class="logo-img">
+                <a href="/"><img src="static/img/logo.png" alt="Лого"/></a>
+            </div>
+            <div class="phone">
+                <div class="phone-holder">
+                    <div class="phone-img">
+                        <img src="static 'img/phone.png" alt="">
+                    </div>
+                    <div class="number"><a class="num" href="#">+7-900-700-90-70</a> </div>
+                </div>
+            </div>
+            <nav class="nav"></nav>
+                <a class="nav-item" href="{% url 'float' %}">Флот</a></li>
+                <a class="nav-item" href="{% url 'prices' %}">Цены и услуги</a></li>
+                <a class="nav-item" href="">Контакты</a></li>
+            </nav>
+            <div class="btn">
+                <a class="button", href="#">Вход/регистрация</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+</body>
+</html>
