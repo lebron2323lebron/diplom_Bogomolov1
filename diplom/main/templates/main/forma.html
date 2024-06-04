@@ -13,7 +13,7 @@
                 </select>
             </label>
             <label for="username">Имя пользователя</label>
-                <input type="text" name="username" id="username">
+                <input type="text" name="username" id="username" value= {{ user.username }}>
             <label>
                 Дата первого занятия
                 <input type="date" name="birthday">
@@ -24,7 +24,7 @@
             </label>
             <label>
                 Email
-                <input type="email" name="email-address" placeholder="name@domain.com">
+                <input type="email" name="email-address" placeholder="name@domain.com" value={{ user.email }}>
             </label>
             <label>
                 Стоимость
