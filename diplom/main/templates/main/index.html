@@ -1,0 +1,24 @@
+{% extends 'main/layout.html' %}
+{% load static %}
+{% block title %}Главная страница{% endblock %}
+
+{% block content %}
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+
+    <body id="bg">
+    <div class="features">
+        <div class="main_text-h">
+            Вейк-
+        </div>
+        <div class="main-text">
+            Серфинг
+        </div>
+        <div class="submain-text">Позволь себе новую зависимость</div>
+        <div class="home-but">
+            <button class="btn">
+                <a class="button-home", href="{% url 'forma' %}">Записаться</a>
+            </button>
+        </div>
+    </div>
+    </body>
+{% endblock %}

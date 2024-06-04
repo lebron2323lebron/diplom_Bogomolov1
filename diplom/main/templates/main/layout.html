@@ -32,24 +32,75 @@
             <div class="phone">
                 <div class="phone-holder">
                     <div class="phone-img">
-                        <img src="static 'img/phone.png" alt="">
+                        <img src="static/img/phone.png" alt="">
                     </div>
                     <div class="number"><a class="num" href="#">+7-900-700-90-70</a> </div>
                 </div>
             </div>
             <nav class="nav"></nav>
-                <a class="nav-item" href="{% url 'float' %}">Флот</a></li>
-                <a class="nav-item" href="{% url 'prices' %}">Цены и услуги</a></li>
-                <a class="nav-item" href="">Контакты</a></li>
+                <a class="nav-item" href="{% url 'cources' %}">Курсы</a></li>
+                <a class="nav-item" href="{% url 'reiting' %}">Отзывы</a></li>
+                <a class="nav-item" href="{% url 'contacts' %}">Контакты</a></li>
             </nav>
-            <div class="btn">
-                <a class="button", href="#">Вход/регистрация</a>
-            </div>
+            {% if user.is_authenticated %}
+                <div class="dropdown">
+                    <button class="btn btn-primary my-btn dropdown-toggle me-3" type="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                        {{ request.user }}
+                    </button>
+                    <ul class="dropdown-menu dd-color">
+                        <li>  
+                            <a class="dropdown-item dd-item-color" href="{% url 'users:profile-detail' username=user.username %}">Профиль</a>  
+                        </li>
+                        <li>
+                            <form method='post', action='{% url 'users:logout' %}'>
+                                {% csrf_token %}
+                                <button type='submit' class="dropdown-item dd-item-color">Выйти</button>
+                            </form>
+                        </li>
+                    </ul>
+                </div>
+            {% else %}
+                <li class="nav-item">
+                    <a class="nav-link btn btn-primary my-btn me-3"
+                    href="{% url 'users:login' %}">Войти</a>
+                </li>
+                <li class="nav-item">  
+                    <a class="nav-link btn btn-primary my-btn me-3"  
+                       href="{% url 'users:register' %}">Регистрация</a>  
+                </li>
+            {% endif %}
         </div>
     </header>
     <main>
         {% block content %}
         {% endblock %}
     </main>
+    <footer class="footer">
+        <div class="footer-element">
+
+            <div class="contacts">
+                <p>Москва, Яхт-клуб “River Club”</p>
+                <p>Ул. Авиационная 79к1 стр2</p>
+                <p>Режим работы: ПН-ВС 6:00-22:00</p>
+                <p>info_WA@mail.ru</p>
+                <p>+7 (900) 700-90-70</p>
+            </div>    
+            <div class="social">
+                <div class="social-all">
+                <img src="static/img/13.png" alt="телеграмм"/>
+                <img src="static/img/12.png" alt="Инстаграмм"/>
+                <img src="static/img/11.png" alt="Вацап"/>
+                </div>
+                <div class="policy">
+                    <p>Политика в отношении обработки персональных данных</p>
+                    <p>Пользовательское соглашение</p>
+                    <p>Публичная оферта</p>
+                    <p>Реквизиты</p>
+                </div>
+            </div>
+
+        </div>
+    </footer>
 </body>
 </html>
