@@ -26,3 +26,9 @@ def contacts(request):
 
 def forma(request):
     return render(request, 'main/forma.html', context={"user": request.user})
+
+def profile(request):
+    return render(request, 'main/profile.html')
+
+def profile_courses(request):
+    return render(request, "main/profile-courses.html", context={"courses": request.user.courses.all()})

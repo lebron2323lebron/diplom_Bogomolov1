@@ -497,3 +497,47 @@ h4 {
     align-items: center;
     justify-content: center;
 }
+
+.profile-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.profile-title {
+    padding-top: 1%;
+}
+.courses {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.course-item {
+    align-text: center;
+    background: #ffffff;
+    border-radius: 20px;
+}
+.course-title {
+    text-align: center;
+    margin: 10px;
+}
+.course-div-btn {
+    text-align: center;
+}
+
+.course-div {
+    text-align: center;
+    margin: 10px;
+}
+.course-btn {
+    background: #1F2833;
+    border-radius: 15px;
+    color: #66FCF1;
+    text-decoration: none;
+    outline: none;
+    padding: 10px;
+    font-weight: bold;
+}

@@ -100,12 +100,12 @@ class UserRegisterView(SuccessMessageMixin, CreateView):
         context['title'] = 'Регистрация на сайте'
         return context
 
-
 from django import forms
 from django.contrib.auth.forms import AuthenticationForm
 from django.contrib.auth.models import User
 
 
-
+def get_my_courses(request):
+    return render(request, "users/profile-courses.html", context={"courses": request.user.courses.all()})
 
 
