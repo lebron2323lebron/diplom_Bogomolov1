@@ -7,7 +7,7 @@ urlpatterns = [
     path('prices', views.prices, name='prices'),
     path('reiting', views.reiting, name='reiting'),
     path('contacts', views.contacts, name='contacts'),
-    path('forma', views.forma, name='forma'),
+    path('forma', views.ApplicationFormView.as_view(), name='forma'),
     path("profile", views.profile, name="profile"),
     path("profile-courses", views.profile_courses, name="profile-courses"),
 ]

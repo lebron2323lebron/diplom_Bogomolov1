@@ -9,15 +9,18 @@ from users.models import User
 class Course(models.Model):
     title = models.CharField(max_length=255, null=False, blank=False, verbose_name="название")
     logo = models.ImageField(verbose_name="логотип", null=True, blank=True)
-    users = models.ManyToManyField(get_user_model(), related_name="courses")
+    users = models.ManyToManyField(get_user_model(), related_name="courses", null=True)
 
     class Meta:
         verbose_name = "курс"
         verbose_name_plural = "курсы"
 
+    def __str__(self):
+        return self.title
+
 
 class ParticipationApplication(models.Model):
-    course = models.ForeignKey(Course, on_delete=models.RESTRICT, related_name="participation_applications")
+    course = models.ForeignKey(Course, on_delete=models.CASCADE, related_name="participation_applications")
     user = models.ForeignKey(User, on_delete=models.CASCADE, related_name="participation_applications")
     price = models.DecimalField(max_digits=11, decimal_places=2)
     phone_number = PhoneNumberField(blank=False, null=False)
