@@ -46,6 +46,10 @@ class ApplicationFormView(CreateView):
     success_url = "/profile-courses"
     model = ParticipationApplication
 
+    def get_context_data(self, **kwargs):
+        kwargs["user"] = self.request.user
+        return super().get_context_data(**kwargs)
+
     def form_valid(self, form):
         user = self.request.user
         course = form.cleaned_data["course"]

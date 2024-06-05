@@ -447,6 +447,25 @@ input {
     padding: 20px 20px 0 20px;
 }
 
+.application {
+    padding: 20px;
+}
+
+.application label {
+    margin: 10px;
+    display: block;
+    font-weight: bold;
+    color: #c5c6c7;
+}
+
+.application input {
+    background: #c5c6c7;
+    color: #1f2833;
+    padding: 6px;
+    margin-top: 6px;
+    width: 100%;
+}
+
 .info label {
     color: #c5c6c7;
     display: block;

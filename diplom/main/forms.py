@@ -10,7 +10,7 @@ class ApplicationForm(forms.ModelForm):
 
     class Meta:
         model = ParticipationApplication
-        exclude = ("user", "course")
+        fields = ("course", "phone_number", "price", "date", "time", "wishes")
         widgets = {
             "date": forms.DateInput(attrs={"type": "date"}),
             "time": forms.TimeInput(attrs={"type": "time"})
