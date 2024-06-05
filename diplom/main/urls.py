@@ -10,4 +10,5 @@ urlpatterns = [
     path('forma', views.ApplicationFormView.as_view(), name='forma'),
     path("profile", views.profile, name="profile"),
     path("profile-courses", views.profile_courses, name="profile-courses"),
+    path("about", views.about, name="about"),
 ]

@@ -59,3 +59,6 @@ class ApplicationFormView(CreateView):
         # print(dir(form))
         # print(form.cleaned_data)
         return super().form_valid(form)
+
+def about(request):
+    return render(request, "main/about_us.html")
