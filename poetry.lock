@@ -167,6 +167,35 @@ files = [
 django = ">=4.2"
 
 [[package]]
+name = "django-phonenumber-field"
+version = "7.3.0"
+description = "An international phone number field for django models."
+optional = false
+python-versions = ">=3.8"
+files = [
+    {file = "django-phonenumber-field-7.3.0.tar.gz", hash = "sha256:f9cdb3de085f99c249328293a3b93d4e5fa440c0c8e3b99eb0d0f54748629797"},
+    {file = "django_phonenumber_field-7.3.0-py3-none-any.whl", hash = "sha256:bc6eaa49d1f9d870944f5280258db511e3a1ba5e2fbbed255488dceacae45d06"},
+]
+
+[package.dependencies]
+Django = ">=3.2"
+
+[package.extras]
+phonenumbers = ["phonenumbers (>=7.0.2)"]
+phonenumberslite = ["phonenumberslite (>=7.0.2)"]
+
+[[package]]
+name = "phonenumbers"
+version = "8.13.38"
+description = "Python version of Google's common library for parsing, formatting, storing and validating international phone numbers."
+optional = false
+python-versions = "*"
+files = [
+    {file = "phonenumbers-8.13.38-py2.py3-none-any.whl", hash = "sha256:d22aa747fb591ef2a18afec13cab5a0e294ab20fce5a1560e4949e459e70eeef"},
+    {file = "phonenumbers-8.13.38.tar.gz", hash = "sha256:2822c74ee9334e9d8ad792fc352cc8d21004307349b6b1bb61da12937fa2eaba"},
+]
+
+[[package]]
 name = "pillow"
 version = "10.3.0"
 description = "Python Imaging Library (Fork)"
@@ -292,4 +321,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.12"
-content-hash = "21b1f1b770d9193fb00d428f165f07b960e46220f78328a48623c9ac03246173"
+content-hash = "ac4ada81c97d43f9e47aa0dd667c87d22933fca21ee3594eee2e013c38b10989"

@@ -5,7 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9919e691-f017-40ab-a5d7-77a54b823611" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/diplom_Bogomolov.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/diplom_Bogomolov.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diplom/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/diplom/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diplom/main/templates/main/reiting.html" beforeDir="false" afterPath="$PROJECT_DIR$/diplom/main/templates/main/reiting.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poetry.lock" beforeDir="false" afterPath="$PROJECT_DIR$/poetry.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,8 +42,8 @@
     "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/home/miguelius/PycharmProjects/diplom_Bogomolov1/diplom/main/templates/main",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+    "last_opened_file_path": "/home/miguelius/PycharmProjects/itis_2023/deploy",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   },
   "keyToStringList": {
     "ChangesTree.GroupingKeys": [
@@ -58,7 +63,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-babbdf50b680-746f403e7f0c-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-241.15989.155" />
+        <option value="bundled-python-sdk-48aec45f0201-746f403e7f0c-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-241.17011.127" />
       </set>
     </attachedChunks>
   </component>
