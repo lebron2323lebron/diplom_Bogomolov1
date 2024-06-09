@@ -11,4 +11,7 @@ urlpatterns = [
     path("profile", views.profile, name="profile"),
     path("profile-courses", views.profile_courses, name="profile-courses"),
     path("about", views.about, name="about"),
+    path('course1', views.course1, name='course1'),
+    path('course2', views.course2, name='course2'),
+    path('course3', views.course3, name='course3'),
 ]

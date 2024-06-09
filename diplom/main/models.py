@@ -31,3 +31,11 @@ class ParticipationApplication(models.Model):
     class Meta:
         verbose_name = "заявка на участие"
         verbose_name_plural = "заявки на участие"
+
+
+class Reiting(models.Model):
+    user = models.ManyToManyField(get_user_model(), related_name="reiting", null=True)
+    title = models.CharField(max_length=255, null=False, blank=False, verbose_name="Отзыв")
+    logo = models.ImageField(verbose_name="аватар", null=True, blank=True)
+    date = models.DateField(blank=False, null=False)
+    

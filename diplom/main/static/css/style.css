@@ -28,6 +28,7 @@ main {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    
 }
 
 
@@ -154,10 +155,14 @@ main {
 }
 
 .features{
+    background-image: url("../img/bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    height: 1024px;
 }
 
 .main-img{
@@ -232,13 +237,25 @@ main {
     padding-top: 5%;
     font-size: 39px;
     font-weight: 400;
-    color: #66fcf1;
+    color: #C5C6C7;
 }
+
+.title-reiting {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 5%;
+    font-size: 39px;
+    font-weight: 400;
+    color: #1f2833;
+}
+
 .qaz{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    border-color: #66FCF1;
 }
 
 .uslug-main-tittle{
@@ -260,17 +277,190 @@ main {
     height: 350px;
     border-radius: 15px;
     background-color: #1f2833;
+    border-color: #66FCF1;
+    border-style: solid;
 }
 
 .qaz .uslugs .qwr{
     padding: 30px;
-    text-align: center;    
+    display: flex;
+    align-items: start;
+    text-align: center;   
+    flex-direction: row; 
 }
 
 .qaz .uslugs .qwr .reiting-image {
-    width: 80px;
+    width: 120px;
+    height: 120px;
     padding: 4%;
     border-radius: 50%;
+}
+
+.container {
+    display: grid;
+    gap: 50px;
+    margin-top: 5%;
+    margin-left: 15%;
+    margin-right: 15%;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+#one {
+
+    box-sizing: border-box;
+    margin: 1%;
+    padding: 1%;
+    justify-self: center;
+}
+
+#one .opis{
+    display: flex;
+    flex-direction: row;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 2%;
+}
+
+#one .opis div{
+    padding: 10px;
+}
+
+#one .opis h3{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#two {
+
+    box-sizing: border-box;
+    margin: 5px;
+    padding: 5px;
+    justify-self: center;
+}
+
+#two .opis{
+    display: flex;
+    flex-direction: row;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+#two .opis div{
+    padding: 10px;
+}
+
+#two .opis h3{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#three {
+
+    box-sizing: border-box;
+    margin: 5px;
+    padding: 5px;
+    justify-self: center;
+}
+
+#three .opis{
+    display: flex;
+    flex-direction: row;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+#three .opis div{
+    padding: 10px;
+}
+
+#three .opis h3{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#four {
+
+    box-sizing: border-box;
+    margin: 5px;
+    padding: 5px;
+    justify-self: center;
+}
+
+#four .opis{
+    display: flex;
+    flex-direction: row;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+#four .opis div{
+    padding: 10px;
+}
+
+#four .opis h3{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#one .opis div .opis-img{
+    width: 90px;
+    height: 90px;
+    padding: 4%;
+    border-radius: 50%;
+}
+
+#two .opis div .opis-img{
+    width: 90px;
+    height: 90px;
+    padding: 4%;
+    border-radius: 50%;
+}
+
+#three .opis div .opis-img{
+    width: 90px;
+    height: 90px;
+    padding: 4%;
+    border-radius: 50%;
+}
+
+#four .opis div .opis-img{
+    width: 90px;
+    height: 90px;
+    padding: 4%;
+    border-radius: 50%;
+}
+
+.forma-reiting{
+    width: 100%;
+    height: 700px;
+    background-color: #66FCF1;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+
+textarea{
+    width: 100%;
+    height: 200px;
+    resize: none;
+}
+
+.btn-reiting{
+    background-color: #66FCF1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40%;
+    margin-top: 2%;
+}
+
+.reiting-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .qaz .uslugs .qwr p {
@@ -289,6 +479,7 @@ main {
     padding: 30px;
     text-align: center;
     background-color: #1f2833;
+    border: 3px solid #66FCF1;
 }
 
 .qaz .uslugs .qwe h2{
@@ -355,19 +546,17 @@ main {
 
 .reiting-tittle{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 20px;
-    font-weight: 600;
+    justify-content:center;
+    text-align: justify;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: Open sans-serif;
     padding-top: 1%;
     color: #c5c6c7;
+    padding-left: 15px;
 }
 
-.reiting-image{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 
 .home-but{
     display: flex;
@@ -426,6 +615,7 @@ main {
     box-sizing: border-box;
     display: flex;
     justify-content: center;
+
 }
 
 form {
@@ -435,6 +625,7 @@ form {
     font-size: 15px;
     overflow: hidden;
     width: 400;
+    margin-top: 3%;
 }
 
 input {
@@ -467,7 +658,7 @@ input {
 }
 
 .info label {
-    color: #c5c6c7;
+    color: #0d1c2e;
     display: block;
     font-weight: bold;
     margin-bottom: 20px;
@@ -596,7 +787,7 @@ h4 {
    align-items: center;
    display: flex;
    justify-content: space-between;
-   margin-top: -150px;
+   margin-top: -125px;
    border-radius: 20px;
 }
 .about-item {
@@ -614,4 +805,189 @@ h4 {
     text-align: center;
     display: flex;
     justify-content: center;
+}
+
+.carta {
+
+
+    height: 400;
+    width: 100%;
+    margin: 0;
+    padding: 50px;
+}
+
+.cource-title {
+    font: Open Montserrat Alternates;
+    font-size: 39px;
+    font-weight: 400;
+    text-align: center;
+    margin: 20px;
+}
+
+.second-text{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 1440px;
+}
+
+.about-text-cource{
+
+}
+
+.about-second-page{
+
+}
+
+.about-text2{
+    width: 30%;
+    text-align: justify;
+
+}
+
+.wrapper-second{
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: -30px;
+    padding: 20px;
+    padding-bottom: 20px;
+}
+
+.cources-second-page{
+    background-image: url("../img/artem.png");
+    height: 634px;
+    width: 1440px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 0;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.wrapper-page2 {
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.cources-home{
+    background-color: #1F2833;
+
+}
+
+.button-reiting{
+    color: #66FCF1;
+    width: 360px;
+    height: 96px;
+    font-size: 31px;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 29px 63px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-course{
+    font-size: 48px;
+    font-weight: 700;
+    font-family: monsterat alternative;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.course-info{
+    background-color: #C5C6C7;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-bottom: 10%;
+    align-items: center;
+}
+
+.course-main{
+    background-color: #1f2833;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+ 
+}
+
+.spisok{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 10px;
+    padding: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.spisok-info{
+    font-size: 25px;
+    font-weight: 400;
+    color: #C5C6C7;
+}
+
+.inform{
+    width: 50%;
+    font-size: 25px;
+    font-weight: 400;
+    color: #C5C6C7; 
+}
+
+.sertificate-main{
+    background-color: #1f2833;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.sertificate-info{
+    font-size: 32px;
+    font-weight: 400;
+    color: #C5C6C7;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.sertificate-info p{
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.title-sert{
+    font-size: 48px;
+    font-weight: 700;
+    color: #C5C6C7;
+}
+
+.sertificate-block{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10%;
+}
+
+.forma-sert{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    background-color: #66FCF1;
 }

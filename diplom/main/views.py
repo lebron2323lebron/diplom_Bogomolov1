@@ -62,3 +62,12 @@ class ApplicationFormView(CreateView):
 
 def about(request):
     return render(request, "main/about_us.html")
+
+def course1(request):
+    return render(request, 'main/course1.html')
+
+def course2(request):
+    return render(request, 'main/course2.html')
+
+def course3(request):
+    return render(request, 'main/course3.html')
