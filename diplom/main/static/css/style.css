@@ -303,8 +303,8 @@ main {
     margin-left: 15%;
     margin-right: 15%;
     justify-content: center;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
+    grid-template-rows: repeat(2, minmax(300px, 1fr));
 }
 
 #one {
@@ -990,4 +990,29 @@ h4 {
     display: flex;
     justify-content: center;
     background-color: #66FCF1;
+}
+
+.row{
+    display: flex;
+    background-color: #1f2833;
+    align-items: center;
+    justify-content: center;
+    border: none;
+}
+
+.row p{
+    font-size: 20px;
+    font-weight: 400;
+    color: #C5C6C7;
+}
+
+.page-container{
+    width: 60%;
+    min-width: 400px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.page-container p{
+    text-align: center;
 }
