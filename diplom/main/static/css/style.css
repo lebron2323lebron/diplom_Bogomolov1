@@ -1016,3 +1016,26 @@ h4 {
 .page-container p{
     text-align: center;
 }
+
+.card-module{
+    display: flex;
+    align-items: center;
+ }
+
+.card-module p{
+    font-size: 20px;
+    font-weight: 400;
+    color: #0d1c2e;
+}
+
+.modules1{
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+    grid-template-rows: repeat(2, 200px);
+    justify-content: center;
+    margin: 10px auto;
+    align-items: center;
+    padding: 40px;
+    column-gap: 7%;
+    row-gap: 27px;
+}

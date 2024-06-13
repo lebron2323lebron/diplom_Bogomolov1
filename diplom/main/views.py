@@ -71,3 +71,6 @@ def course2(request):
 
 def course3(request):
     return render(request, 'main/course3.html')
+
+def module(request):
+    return render(request, "main/modules.html")

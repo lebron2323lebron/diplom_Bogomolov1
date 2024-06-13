@@ -1,0 +1,29 @@
+{% extends 'main/profile.html' %}
+
+{% block profile-content %}
+<div class="courses">
+    {% for course in courses %}
+    {% endfor %}
+    <div class='modules1'>
+        <div class="course-title">
+            {{ course.title }}
+        </div>
+        <div class='card-module'>
+            <p>Модуль 1</p>
+            <p>Термины в вейксерфе</p>
+        </div>
+        <div class='card-module'>
+            <p>Модуль 1</p>
+            <p>Термины в вейксерфе</p>
+        </div>
+        <div class='card-module'>
+            <p>Модуль 1</p>
+            <p>Термины в вейксерфе</p>
+        </div>
+        <div class='card-module'>
+            <p>Модуль 1</p>
+            <p>Термины в вейксерфе</p>
+        </div>
+    </div>
+</div>
+{% endblock %}
