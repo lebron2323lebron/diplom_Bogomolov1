@@ -3,7 +3,7 @@ from django.http import HttpResponse
 from django.views.generic import FormView, CreateView
 
 from main.forms import ApplicationForm
-from main.models import ParticipationApplication
+from main.models import ParticipationApplication, Course
 
 
 # Create your views here.
@@ -40,6 +40,21 @@ def profile_courses(request):
     return render(request, "main/profile-courses.html", context={"courses": request.user.courses.all()})
 
 
+
+class zapisi(CreateView):
+    template_name = "main/zapisi.html"
+    model = ParticipationApplication
+    form_class = ApplicationForm
+
+    def get_context_data(self, **kwargs):
+        kwargs["user"] = self.request.user 
+        return super().get_context_data(**kwargs)
+    
+def schedule(request):
+    profiles = ParticipationApplication.objects.all()
+    return render(request, 'main/zapisi.html', {'profiles': profiles})
+    
+
 class ApplicationFormView(CreateView):
     template_name = "main/application_form.html"
     form_class = ApplicationForm
@@ -73,4 +88,5 @@ def course3(request):
     return render(request, 'main/course3.html')
 
 def module(request):
-    return render(request, "main/modules.html")
+    cources = Course.objects.all()
+    return render(request, "main/modules.html", {'cources' : cources})

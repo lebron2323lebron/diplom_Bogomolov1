@@ -1,7 +1,24 @@
 {% extends 'main/layout.html' %}
 
 {% block content %}
-    <div class="card mb-3 border-0 nth-shadow">
+    <style>
+        .abc {
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            margin: 0 auto;
+        }
+        .abc p {
+            color:#1f2833;
+            align-items:center;
+            font-size:48px;
+            font-weight:700;
+        }
+    </style>
+    <div class='abc'>
+        <p>Вейк-Школа</p>
+    </div>
+    <div class=" mb-3 border-0 nth-shadow">
         <div class="card-body">
             <div class="card-title nth-card-title">
                 <h4>Авторизация на сайте</h4>
@@ -10,10 +27,10 @@
                 {% csrf_token %}
                 {{ form.as_p }}
                 <div class="d-grid gap-2 d-md-block mt-2">
-                    <button type="submit" class="btn btn-dark">Авторизоваться</button>
+                    <button type="submit" class="btn btn-dark"> Войти</button>
                 </div>
-                <div class="btn">
-                    <a class="button-home", href="{%url 'users:register'%}">Зарегистрироваться</a>
+                <div class="d-grid gap-2 d-md-block mt-2">
+                    <button type='submit' class="btn btn-dark", href="{%url 'users:register'%}">Зарегистрироваться</button>
                 </div>
             </form>
         </div>

@@ -15,4 +15,5 @@ urlpatterns = [
     path('course2', views.course2, name='course2'),
     path('course3', views.course3, name='course3'),
     path('modules1', views.module, name='modules1'),
+    path('zapisi', views.schedule, name="zapisi"),
 ]

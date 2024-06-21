@@ -10,7 +10,7 @@
         <a class="btn" href="{% url 'users:profile-detail' username=user.username %}">Профиль</a>
     </div>
     <div>
-        <a class="btn">Мои записи</a>
+        <a class="btn" href="{% url 'zapisi' %}">Мои записи</a>
     </div>
 </div>
 {% block profile-content %}

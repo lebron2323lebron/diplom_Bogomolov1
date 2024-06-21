@@ -38,4 +38,7 @@ class Reiting(models.Model):
     title = models.CharField(max_length=255, null=False, blank=False, verbose_name="Отзыв")
     logo = models.ImageField(verbose_name="аватар", null=True, blank=True)
     date = models.DateField(blank=False, null=False)
+
+    class Meta:
+        verbose_name = "Отзывы"
     
