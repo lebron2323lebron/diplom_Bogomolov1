@@ -10,7 +10,7 @@ class ApplicationForm(forms.ModelForm):
 
     class Meta:
         model = ParticipationApplication
-        fields = ("course", "phone_number", "price", "date", "time", "wishes")
+        fields = ("course", "phone_number", "date", "time", "wishes")
         widgets = {
             "date": forms.DateInput(attrs={"type": "date"}),
             "time": forms.TimeInput(attrs={"type": "time"})

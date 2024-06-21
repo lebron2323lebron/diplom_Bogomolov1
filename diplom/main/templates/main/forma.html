@@ -1,5 +1,5 @@
 {% extends 'main/layout.html' %}
-
+{% load static %}
 {% block content %}
 <div class='forma'>
     <form>
@@ -25,10 +25,6 @@
             <label>
                 Email
                 <input type="email" name="email-address" placeholder="name@domain.com" value={{ user.email }}>
-            </label>
-            <label>
-                Стоимость
-                <input type="number" name="cost">
             </label>
             <label>
                 Номер телефона

@@ -50,8 +50,12 @@ main {
 }
 
 
+.nav-link {
+    color: #C5C6C7;
+}
+
 .nav-item{
-    color: c5c6c7;
+    color: #c5c6c7;
     text-decoration: none;
     font-weight: 400;
     font-size: 20px;
@@ -93,6 +97,18 @@ main {
     font-weight: 700;
     font-size: 16px;
     transition: color 0.2s linear;
+}
+
+.button1 {
+    display: flex;
+    align-items: center;
+    color: #1F2833;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 24px;
+    transition: color 0.2s linear;
+    border-radius: 15px;
+    justify-content: center;
 }
 
 .button-prof{
@@ -294,6 +310,7 @@ main {
     background-color: #1f2833;
     border-color: #66FCF1;
     border-style: solid;
+    border-radius: 15px;
 }
 
 .qaz .uslugs .qwr{
@@ -495,6 +512,7 @@ textarea{
     text-align: center;
     background-color: #1f2833;
     border: 3px solid #66FCF1;
+    border-radius: 25px;
 }
 
 .qaz .uslugs .qwe h2{
@@ -551,10 +569,17 @@ textarea{
     align-items: center;
 }
 
-.button1{
+.button2{
     display: flex;
     justify-content: center;
     padding-top: 7%;
+    background-color: #66FCF1;
+    color: #1F2833;
+    text-decoration: none;
+    border-radius: 15px;
+    font-size: 25px;
+    font-weight: 400;
+    padding: auto;
 }
 
 
@@ -641,6 +666,7 @@ form {
     overflow: hidden;
     width: 400;
      margin: auto;
+     margin-top: 100px;
 }
 
 input {
@@ -1118,6 +1144,12 @@ h4 {
     margin: auto;
     flex-direction: column;
     text-align: center;
+    margin: 50px;
+}
+
+.verh-reg {
+    margin-bottom: -80px;
+    margin-top: 40px;
 }
 
 
