@@ -15,5 +15,10 @@ urlpatterns = [
     path('course2', views.course2, name='course2'),
     path('course3', views.course3, name='course3'),
     path('modules1', views.module, name='modules1'),
+    path('modules11', views.module11, name='module11'),
+    path('modules12', views.module12, name='module12'),
+    path('modules13', views.module13, name='module13'),
+    path('modules14', views.module14, name='module14'),
+
     path('zapisi', views.schedule, name="zapisi"),
 ]

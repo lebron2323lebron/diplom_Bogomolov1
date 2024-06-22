@@ -1257,3 +1257,30 @@ textarea{
 .btn-reiting {
     margin-bottom: 15px;
 }
+
+.login-img {
+    display: flex;
+    justify-content: center;
+    width: 150px;
+    height: 200px;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.login-image {
+    width: 150px;
+    height: 200px;
+}
+
+.button_reg {
+    margin: 15px;
+    width: 90%;
+}
+
+.file {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}

@@ -1,5 +1,5 @@
 {% extends 'main/layout.html' %}
-
+{% load static %}
 {% block content %}
     <style>
         .abc {
@@ -34,5 +34,8 @@
                 </div>
             </form>
         </div>
+    </div>
+    <div class="login-img">
+        <img class='login-image' src="{% static 'img/login.png' %}">
     </div>
 {% endblock %}

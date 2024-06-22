@@ -90,3 +90,15 @@ def course3(request):
 def module(request):
     cources = Course.objects.all()
     return render(request, "main/modules.html", {'cources' : cources})
+
+def module11(request):
+    return render(request, 'main/module11.html')
+
+def module12(request):
+    return render(request, 'main/module12.html')
+
+def module13(request):
+    return render(request, 'main/module13.html')
+
+def module14(request):
+    return render(request, 'main/module14.html')
