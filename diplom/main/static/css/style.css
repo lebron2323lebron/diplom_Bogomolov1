@@ -784,8 +784,17 @@ input {
     width: 100%;
 }
 
+form .btn {
+    background-color: #66FCF1;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
 .info .btn {
     background: linear-gradient(#49708f, #293f50);
+    background-color: #66FCF1;
     border: 0;
     color: #fff;
     cursor: pointer;
