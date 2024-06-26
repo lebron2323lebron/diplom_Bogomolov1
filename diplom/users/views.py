@@ -111,7 +111,11 @@ def get_my_courses(request):
 
 class EditProfilePageView(UpdateView):
     model = Profile
-    template_name = 'base/edit_profile_page.html'
+    template_name = 'edit_user_profile.html'
     form_class=UserProfileView
     
-    success_url = reverse_lazy('profile')
+    # success_url = reverse_lazy('profile')
+
+def update_profile(request):
+        form = UserUpdateForm()
+        return render(request, 'users/edit_user_profile.html', context={'form':form})

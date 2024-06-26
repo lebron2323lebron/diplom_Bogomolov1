@@ -1,9 +1,10 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from django.views.generic import FormView, CreateView
+from django.urls import reverse
 
 from main.forms import ApplicationForm
-from main.models import ParticipationApplication, Course
+from main.models import ParticipationApplication, Course, Reiting
 
 
 # Create your views here.
@@ -102,3 +103,11 @@ def module13(request):
 
 def module14(request):
     return render(request, 'main/module14.html')
+
+def add_reviews(request):
+    user = request.get('username')
+    pn = request.get('phone-number')
+    # request.get('checkbox')
+    text = request.get('forma-comment')
+    # r = Reiting(user=user, title=pn )
+    return HttpResponse('io') # reverse('reiting')

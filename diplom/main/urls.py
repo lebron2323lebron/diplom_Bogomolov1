@@ -19,6 +19,7 @@ urlpatterns = [
     path('modules12', views.module12, name='module12'),
     path('modules13', views.module13, name='module13'),
     path('modules14', views.module14, name='module14'),
+    path('add_reviews', views.add_reviews, name='add_reviews'),
 
     path('zapisi', views.schedule, name="zapisi"),
 ]

@@ -10,6 +10,6 @@ urlpatterns = [
     path('login/', views.CustomLoginView.as_view(), name='login'),
     path('logout/', auth_views.LogoutView.as_view(template_name='users/logout.html'), name='logout'),
     path("courses/", views.get_my_courses, name="user-courses"),
-    path('<str:username>/', views.UserProfileView.as_view(), name='profile-detail'),
-    path('edit_user_profile', views.EditProfilePageView.as_view, name='edit_user_profile')
+    path('user/<str:username>/', views.UserProfileView.as_view(), name='profile-detail'),
+    path('edit_user_profile/', views.update_profile, name='edit_user_profile'),
 ]

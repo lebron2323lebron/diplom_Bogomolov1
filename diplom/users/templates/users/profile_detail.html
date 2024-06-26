@@ -24,9 +24,7 @@
                         {% endif %}
                     </p>
                     <div class="button-prof">
-                        {% if user.id == profile.user.id %}
-                        <a href="{% url 'edit_user_profile' profile.id %}">Редактировать</a>
-                        {% endif %}
+                        <a href="/edit_user_profile">Редактировать</a>
                     </div>
                 </div>
             </div>
